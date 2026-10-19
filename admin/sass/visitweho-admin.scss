@@ -1,0 +1,229 @@
+@import "components/legacy";
+
+.autocomplete-search {
+	position: relative;
+
+	input {
+		height: 40px;
+	}
+}
+
+.add-group {
+	padding-bottom: 1em;
+}
+
+.collection-content-container {
+	margin-bottom: 200px;
+	ul {
+		li {
+			position: relative;
+			padding: 2em;
+			display: block;
+			font-size: 1.2em;
+			font-weight: 500;
+			margin-bottom: 10px;
+			border: 2px dotted #ddd;
+
+			/* Chrome, Firefox, Opera, Safari 10.1+ */
+			::placeholder {
+				color: #999;
+				opacity: 1; /* Firefox */
+			}
+
+			h5 {
+				margin: 1em 0;
+			}
+
+			h5.group-label {
+				margin-top: 0;
+			}
+
+			/* Internet Explorer 10-11 */
+			:-ms-input-placeholder {
+				color: #999;
+			}
+
+			/* Microsoft Edge */
+			::-ms-input-placeholder {
+				color: #999;
+			}
+
+			.original-title {
+				position: absolute;
+				bottom: 5px;
+				right: 10px;
+				font-size: 11px;
+				color: #999;
+				text-transform: lowercase;
+			}
+
+			&.heading {
+				border: 2px dashed #ddd;
+			}
+
+			input {
+				box-shadow: none;
+				width: 300px;
+			}
+
+			.delete-activity-row  {
+				cursor: pointer;
+				color: red;
+				position: absolute;
+				top: 5px;
+				right: 8px;
+				font-size: 28px;
+				line-height: 0.75;
+			}
+
+			.delete-group-row  {
+				cursor: pointer;
+				position: absolute;
+				top: 5px;
+				right: 8px;
+				line-height: 0.75;
+			}
+
+			.dashicons-move {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				font-size: 20px;
+			}
+
+			.dashicons-arrow-up-alt {
+				position: absolute;
+				left: 0;
+				top: 0;
+				font-size: 24px;
+				height: 24px;
+				width: 24px;
+				color: #888;
+				cursor: pointer;
+
+				&:hover {
+					color: #333;
+				}
+			}
+
+			.dashicons-arrow-down-alt {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				font-size: 24px;
+				height: 24px;
+				width: 24px;
+				color: #888;
+				cursor: pointer;
+
+				&:hover {
+					color: #333;
+				}
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			small {
+				text-transform: uppercase;
+				color: #999;
+				font-size: 11px;
+			}
+
+			.search-results {
+				position: absolute;
+				border-radius: 4px;
+				top: auto;
+				z-index: 1000;
+				visibility: hidden;
+				box-shadow: 0px 10px 15px rgba(0,0,0,0.15);
+				border: 1px solid #F0F0F0;
+				width: 100%;
+				background: white;
+				padding: 0;
+				&.active {
+					visibility: visible;
+				}
+
+				ul {
+					list-style-type: none;
+					margin: 0;
+					li {
+						&.no-results {
+							padding: 10px 20px;
+							font-size: 0.9rem;
+						}
+						&:hover {
+							background-color: #f6f6f6;
+						}
+						color: #000;
+						font-size: 0.9rem;
+						padding: 10px 20px;
+						display: block;
+						cursor: pointer;
+						border: none;
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.group-activities {
+				margin-top: 1em;
+				li {
+					border: 2px dashed #ddd;
+					cursor: normal;
+				}
+			}
+		}
+	}
+}
+
+.grabbable {
+	cursor: move;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	&:active {
+		cursor: grabbing;
+		cursor: -moz-grabbing;
+		cursor: -webkit-grabbing;
+	}
+}
+
+.thumbnail-manager {
+	display: block;
+}
+
+.thumbnail-manager .thumbnail {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	background-size: cover;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: grab;
+}
+
+.thumbnail-manager .thumbnail .dashicons-no-alt {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #fff;
+	font-size: 30px;
+	width: 30px;
+	height: auto;
+	line-height: 0.9;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.63);
+}
+
+.drag-sort-active {
+	background: transparent;
+	color: transparent;
+	//border: 1px solid #244879;
+}
+
+.js-add-gallery-image {
+	margin-bottom: 1em!important;
+}

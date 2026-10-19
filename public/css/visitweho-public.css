@@ -1,0 +1,467 @@
+/* line 1, sass/partials/_slideshow.scss */
+.cw-hide {
+  display: none !important;
+}
+
+/* line 5, sass/partials/_slideshow.scss */
+.cw-slide-description {
+  margin: 2rem 0;
+}
+
+/* line 9, sass/partials/_slideshow.scss */
+.cw-begin-wrap {
+  text-align: center;
+}
+
+/* line 13, sass/partials/_slideshow.scss */
+.cw-slide-legend {
+  margin: 1rem 0;
+}
+
+/* line 17, sass/partials/_slideshow.scss */
+.cw-slide-nav.cw-slide-prev {
+  float: left;
+}
+
+/* line 21, sass/partials/_slideshow.scss */
+.cw-slide-nav.cw-slide-next {
+  float: right;
+}
+
+/* line 25, sass/partials/_slideshow.scss */
+.cw-slide-footer {
+  text-align: center;
+}
+
+/* line 29, sass/partials/_slideshow.scss */
+.cw-slide-overview figure {
+  margin: 0;
+}
+
+/* line 33, sass/partials/_slideshow.scss */
+.cw-button-wrap:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 1, sass/partials/_bricks.scss */
+.vw-bricks-gallery {
+  margin: 0 auto;
+  max-width: 100%;
+  column-gap: 10px;
+}
+/* line 6, sass/partials/_bricks.scss */
+.vw-bricks-gallery .brick {
+  background: transparent;
+  padding: 0;
+  margin: 0 0 10px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 14, sass/partials/_bricks.scss */
+.vw-bricks-gallery .brick .brick-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+/* line 28, sass/partials/_bricks.scss */
+.vw-bricks-gallery .brick img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+}
+/* line 34, sass/partials/_bricks.scss */
+.vw-bricks-gallery .brick img:hover {
+  transform: scale(1.2);
+}
+
+/* line 39, sass/partials/_bricks.scss */
+.vw-bricks-slides {
+  /*
+  max-width: none;
+  width: auto;
+  overflow: hidden;
+  */
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: max-content;
+}
+@media screen and (max-width: 800px) {
+  /* line 39, sass/partials/_bricks.scss */
+  .vw-bricks-slides {
+    width: auto;
+  }
+}
+/* line 54, sass/partials/_bricks.scss */
+.vw-bricks-slides__inner {
+  /*
+  left: 0;
+  position: relative;
+  white-space: nowrap;
+  */
+}
+@media screen and (max-width: 800px) {
+  /* line 54, sass/partials/_bricks.scss */
+  .vw-bricks-slides__inner {
+    left: 0;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+}
+/* line 70, sass/partials/_bricks.scss */
+.vw-bricks-slides .brick {
+  background: transparent;
+  padding: 0;
+  margin: 0 0 10px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+/* line 80, sass/partials/_bricks.scss */
+.vw-bricks-slides .brick .brick-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+/* line 94, sass/partials/_bricks.scss */
+.vw-bricks-slides .brick img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+  height: 300px;
+}
+/* line 101, sass/partials/_bricks.scss */
+.vw-bricks-slides .brick img:hover {
+  transform: scale(1.2);
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  /* line 108, sass/partials/_bricks.scss */
+  .vw-bricks-gallery {
+    column-count: 4;
+  }
+}
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /* line 115, sass/partials/_bricks.scss */
+  .vw-bricks-gallery {
+    column-count: 3;
+  }
+}
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  /* line 122, sass/partials/_bricks.scss */
+  .vw-bricks-gallery {
+    column-count: 2;
+  }
+}
+/* line 2, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick .source {
+  position: absolute;
+  line-height: 1;
+  left: 5px;
+  bottom: 5px;
+  z-index: 300;
+  pointer-events: none;
+}
+
+/* line 11, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick .source.location {
+  display: none;
+  line-height: 1.5;
+  bottom: 2em;
+  color: #fff;
+}
+
+/* line 18, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick .source.location svg {
+  margin-right: 10px;
+}
+
+/* line 22, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick .source.name {
+  display: none;
+  line-height: 1.5;
+  left: 2em;
+  color: #fff;
+}
+
+/* line 29, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick .cta {
+  display: none;
+  line-height: 1.5;
+  left: 2em;
+  background: #244879;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0.75em;
+}
+/* line 41, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick .cta a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+/* line 48, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick:hover > .source.name {
+  display: block;
+}
+
+/* line 52, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick:hover > .source.location {
+  display: block;
+}
+
+/* line 56, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick:hover > .cta {
+  display: block;
+}
+
+/* line 61, sass/partials/_crowdriff.scss */
+.crowdriff-gallery .brick:hover > .brick-overlay {
+  opacity: 1;
+}
+
+/* line 65, sass/partials/_crowdriff.scss */
+body.crowdriff-lightbox-active {
+  overflow: hidden;
+}
+
+/* line 69, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  pointer-events: none;
+}
+@media screen and (min-width: 1000px) {
+  /* line 69, sass/partials/_crowdriff.scss */
+  .crowdriff-lightbox {
+    background: rgba(255, 255, 255, 0.96);
+  }
+}
+/* line 85, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox.is-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 500;
+  pointer-events: auto;
+}
+/* line 91, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox.is-active .crowdriff-lightbox__slider {
+  transition: all 800ms ease-in-out;
+  -webkit-transition: all 800ms ease-in-out;
+  -moz-transition: all 800ms ease-in-out;
+  -o-transition: all 800ms ease-in-out;
+}
+@media screen and (max-width: 800px) {
+  /* line 91, sass/partials/_crowdriff.scss */
+  .crowdriff-lightbox.is-active .crowdriff-lightbox__slider {
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+  }
+}
+/* line 106, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox .crowdriff-lightbox-image {
+  max-height: 50vh;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: top;
+  align-self: flex-start;
+  margin: 3em auto 0 auto;
+}
+@media screen and (min-width: 800px) {
+  /* line 106, sass/partials/_crowdriff.scss */
+  .crowdriff-lightbox .crowdriff-lightbox-image {
+    max-width: 60vw;
+    max-height: 100vh;
+    margin: 0;
+  }
+}
+/* line 122, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-width: none;
+  position: absolute;
+  width: auto;
+  flex-wrap: nowrap;
+}
+/* line 145, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slider__info {
+  margin: 2em 2em 0 2em;
+  font-size: 1.15em;
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  /* line 145, sass/partials/_crowdriff.scss */
+  .crowdriff-lightbox__slider__info {
+    font-size: 1.35em;
+  }
+}
+/* line 153, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slider__info__name {
+  display: inline;
+  font-weight: bold;
+}
+/* line 158, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slider__info__date {
+  float: right;
+  display: inline;
+  margin-right: 0.5em;
+  line-height: 1.6;
+  font-size: 0.9em;
+}
+/* line 166, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slider__info__desc {
+  margin-top: 1em;
+}
+/* line 170, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slider__info__source {
+  display: inline;
+  float: right;
+}
+/* line 175, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slider__info .location-svg {
+  display: inline;
+}
+/* line 180, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slider__wrapper {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 800px) {
+  /* line 180, sass/partials/_crowdriff.scss */
+  .crowdriff-lightbox__slider__wrapper {
+    flex-wrap: nowrap;
+  }
+}
+/* line 196, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 206, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slide img {
+  display: block;
+  max-width: calc(100vw - 2em);
+  max-height: 90vh;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* line 215, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slide.is-loaded.is-active img {
+  opacity: 1;
+}
+/* line 219, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__slide.is-loaded.is-active .spinner {
+  display: none;
+}
+/* line 225, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 102;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* line 235, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__close {
+  top: 0.25em;
+  right: 1em;
+}
+@media screen and (min-width: 1000px) {
+  /* line 235, sass/partials/_crowdriff.scss */
+  .crowdriff-lightbox__close {
+    right: 2em;
+  }
+}
+/* line 244, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__nextPrev {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+/* line 253, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__nextPrev.is-active {
+  visibility: hidden;
+  transform: scale(1);
+  opacity: 1;
+}
+/* line 259, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__nextPrev svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 265, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__nextPrev--next {
+  right: 1em;
+}
+/* line 269, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__nextPrev--prev {
+  left: 1em;
+}
+/* line 273, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__nextPrev:hover {
+  cursor: pointer;
+}
+/* line 278, sass/partials/_crowdriff.scss */
+.crowdriff-lightbox__counter {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-weight: 700;
+}

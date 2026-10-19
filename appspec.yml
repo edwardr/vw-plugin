@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/wp-content/plugins/visitweho/
+permissions:
+  - object: /var/www/
+    pattern: "**"
+    owner: apache
+    group: www
+hooks:
+   AfterInstall:
+     - location: set-permissions.sh
+       timeout: 3600
+     - location: clear-cache.sh
+       timeout: 3600
+     - location: rebuild-cache.sh
+       timeout: 3600
